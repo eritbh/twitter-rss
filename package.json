@@ -2,7 +2,7 @@
   "name": "twitter-rss",
   "version": "0.0.0",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "npx ts-node index.ts"
   },
   "license": "MIT",
   "devDependencies": {
