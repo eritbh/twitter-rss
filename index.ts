@@ -2,9 +2,8 @@ import {TwitterApiReadOnly} from 'twitter-api-v2';
 import express from 'express';
 
 import {xmlEscape} from './util';
-import config from './config.json';
 
-const client = new TwitterApiReadOnly(config.bearerToken);
+const client = new TwitterApiReadOnly(process.env.TWITTER_BEARER_TOKEN!);
 
 async function fetchUserID (username: string) {
 	const user = await client.v2.userByUsername(username);
