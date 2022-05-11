@@ -2,8 +2,9 @@
   "name": "twitter-rss",
   "version": "0.0.0",
   "scripts": {
-    "start": "npx ts-node index.ts",
-    "start:production": "npx ts-node -T index.ts"
+    "build": "tsc --outDir build",
+    "start": "node build/index.js",
+    "start:production": "NODE_ENV=production node -T build/index.js"
   },
   "license": "MIT",
   "devDependencies": {
