@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import {TwitterApiReadOnly} from 'twitter-api-v2';
 import express from 'express';
 
