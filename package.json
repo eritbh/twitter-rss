@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "tsc --outDir build",
+    "build:production": "tsc --outDir build",
     "start": "node build/index.js",
     "start:production": "NODE_ENV=production node -T build/index.js"
   },
