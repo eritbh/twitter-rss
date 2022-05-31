@@ -16,7 +16,7 @@ jobs:
       id: deployment
       with:
         token: ${{ github.token }}
-        environment_url: ${{ secrets.DEPLOY_HOST }}
+        environment-url: ${{ secrets.DEPLOY_HOST }}
         environment: production
 
     - name: Start SSH agent
