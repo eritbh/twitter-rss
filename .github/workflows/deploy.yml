@@ -9,6 +9,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      deployments: write
     steps:
 
     - name: Create GitHub deployment
