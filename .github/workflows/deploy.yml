@@ -37,7 +37,7 @@ jobs:
           git reset --hard origin/main
 
           # Trigger the rebuild with the new contents
-          sudo systemctl restart twitter-api.service
+          sudo systemctl restart twitter-rss.service
         EOF
 
     - name: Update deployment status (success)
