@@ -4,8 +4,8 @@
   "scripts": {
     "build": "tsc --outDir build",
     "build:production": "tsc --outDir build",
-    "start": "ts-node build/index.js",
-    "start:production": "NODE_ENV=production ts-node -T build/index.js"
+    "start": "ts-node src/index.ts",
+    "start:production": "NODE_ENV=production ts-node -T src/index.ts"
   },
   "license": "MIT",
   "devDependencies": {
