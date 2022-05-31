@@ -32,7 +32,7 @@ jobs:
           set -e
 
           # Checkout latest changes from our repo, overwriting any local changes
-          cd "$HOME/src/github.com/eritbh/twitter-api"
+          cd "$HOME/src/github.com/eritbh/twitter-rss"
           git fetch --all
           git reset --hard origin/main
 
